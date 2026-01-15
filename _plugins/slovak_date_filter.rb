@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'date'
+
 module Jekyll
   module SlovakMonthFilter
     def slovak_month(input)
@@ -17,6 +19,9 @@ module Jekyll
         "November" => "november",
         "December" => "december"
       }
+
+      # Konvertovanie vstupu na reťazec, ak je typu Time
+      input = input.to_s if input.is_a?(Time)
 
       # Rozdelenie dátumu na časti
       date = Date.parse(input)

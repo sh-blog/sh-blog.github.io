@@ -227,6 +227,7 @@ GEM
       stringio
       time
       uri
+    openssl (3.2.0)
     ostruct (0.6.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -311,6 +312,7 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jemoji
   observer
+  openssl (~> 3.0)
   ostruct
 
 BUNDLED WITH
